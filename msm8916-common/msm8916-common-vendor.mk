@@ -291,7 +291,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so\
-    vendor/asus/msm8916-common/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/asus/msm8916-common/proprietary/vendor/qcril.db:system/vendor/qcril.db \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -308,4 +313,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     CNEService \
     qcrilmsgtunnel \
-    QtiTetherService
+    QtiTetherService \
+    vendor.qti.hardware.fm@1.0
+
