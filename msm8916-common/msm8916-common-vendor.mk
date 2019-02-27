@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+# http:/www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -314,8 +314,42 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/framework/QPerformance.jar:system/vendor/framework/QPerformance.jar \
     vendor/asus/msm8916-common/proprietary/vendor/lib64/libqti_performance.so:system/vendor/lib64/libqti_performance.so \
     vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/asus/msm8916-common/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:system/vendor/framework/com.qti.snapdragon.sdk.display.jar
- 
+    vendor/asus/msm8916-common/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:system/vendor/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/asus/msm8916-common/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
+    vendor/asus/msm8916-common/proprietary/lib64/librilqmiservices.so:system/lib64/librilqmiservices.so \
+    vendor/asus/msm8916-common/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
+    vendor/asus/msm8916-common/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/qcnvitems.xml:system/vendor/etc/permissions/qcnvitems.xml \
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/telephonyservice.xml:system/vendor/etc/permissions/telephonyservice.xml \
+    vendor/asus/msm8916-common/proprietary/vendor/framework/QtiTelephonyServicelibrary.jar:system/vendor/framework/QtiTelephonyServicelibrary.jar \
+    vendor/asus/msm8916-common/proprietary/vendor/framework/qcnvitems.jar:system/vendor/framework/qcnvitems.jar \
+    vendor/asus/msm8916-common/proprietary/vendor/framework/qcrilhook.jar:system/vendor/framework/qcrilhook.jar \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libdatactrl.so:system/vendor/lib/libdatactrl.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libCommandSvc.so:system/vendor/lib64/libCommandSvc.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libSubSystemShutdown.so:system/vendor/lib64/libSubSystemShutdown.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libdatactrl.so:system/vendor/lib64/libdatactrl.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libsubsystem_control.so:system/vendor/lib64/libsubsystem_control.so \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so  \
+    vendor/asus/msm8916-common/proprietary/vendor/lib64/qcril.db:system/vendor/lib64/qcril.db
+
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libmdmdetect \
@@ -332,6 +366,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     CNEService \
     qcrilmsgtunnel \
+    QtiTelephonyService \
     QtiTetherService \
     vendor.qti.hardware.fm@1.0
 
