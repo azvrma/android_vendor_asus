@@ -496,6 +496,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
     vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
     vendor/asus/Z010D/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
-    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
+    vendor/asus/Z010D/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
+    vendor/asus/Z010D/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
